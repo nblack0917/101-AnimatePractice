@@ -19,8 +19,41 @@
       <input type="animation-name" id="animation-name" name="animation-name" value="" onkeyup="setAnimationName(this.value)" /><br>
       <label for="element-color">Font Color</label><br>
       <input type="element-color" id="element-color" name="element-color" value="" onkeyup="setElementColor(this.value)" /><br>
-      <input type="reset"/>
-    </form>
+      <label for="element-text">Text to display</label><br>
+      <input type="element-text" id="element-text" name="element-text" value="" onkeyup="setElementText(this.value)" /><br><br>
+      <label for="element-text">Type of Element</label><br>
+      <select type="element-type" id="element-type" name="element-type" value="" onclick="setElementType(this.value)">
+        <option value="H1">H1</option>
+        <option value="H2">H2</option>
+        <option value="H3">H3</option>
+        <option value="H6">H6</option>
+      </select><br><br>
+      <input type="checkbox" name="infiCheck" id="infiCheck">
+      <label for="infiCheckl">Infinite Loop</label><br><br>
+      <h3>Delay Time</h3><br>
+      <label for="delay0">None</label>
+      <input type="radio" name="delay" id="delay0" value="null" onclick="setDelayTime(this.value)"><br>
+      <label for="delay1">1 Second</label>
+      <input type="radio" name="delay" id="delay1" value="delay-1s" onclick="setDelayTime(this.value)"><br>
+      <label for="delay2">2 Seconds</label>
+      <input type="radio" name="delay" id="delay2" value="delay-2s" onclick="setDelayTime(this.value)"><br>
+      <label for="delay3">3 Seconds</label>
+      <input type="radio" name="delay" id="delay3" value="delay-3s" onclick="setDelayTime(this.value)"><br>
+      <label for="delay4">4 Seconds</label>
+      <input type="radio" name="delay" id="delay4" value="delay-4s" onclick="setDelayTime(this.value)"><br>
+      <label for="delay5">5 Seconds</label>
+      <input type="radio" name="delay" id="delay5" value="delay-5s" onclick="setDelayTime(this.value)"><br><br>
+      <label for="speed-select">Select the speed</label><br>
+      <select type="speed-select" id="speed-select" name="speed-select" value="" onclick="setSpeedSelect(this.value)">
+        <option value="null">normal</option>
+        <option value="slow">slow</option>
+        <option value="slower">slower</option>
+        <option value="fast">fast</option>
+        <option value="faster">faster</option>
+      </select><br><br>
+      <button type="reset">Reset Values</button><br>
+      <button type="reset" onclick="resetAll()">Reset All Examples</button><br>
+    </form><br>
     <button onclick="createNewElement()">Create New Element</button>
     <section id="element-collector"></section>
   </main>  

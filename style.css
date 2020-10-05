@@ -6,3 +6,7 @@ marquee {
   padding-top: 20pt;
   font-size: 28pt;
 }
+
+form > h3 {
+  margin: 0;
+}
